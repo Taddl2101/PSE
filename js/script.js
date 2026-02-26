@@ -189,3 +189,5 @@ function reset() {
     }
   });
 }
+//ElemnteWikiOpen
+ document.querySelectorAll('.element').forEach(element => { element.addEventListener('click', function () { const fullname = this.querySelector('.Fullname').textContent.trim(); console.log(fullname); window.open(`https://de.wikipedia.org/wiki/${fullname}`, "_blank"); }); });
