@@ -32,6 +32,7 @@ table:hover {
   box-shadow: 0 0 0.8vh rgba(170, 170, 170, 0.2);
   transition: transform 0.13s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 }
 .element:hover .non-element {
   position: relative;
