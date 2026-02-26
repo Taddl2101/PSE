@@ -190,4 +190,13 @@ function reset() {
   });
 }
 //ElemnteWikiOpen
- document.querySelectorAll('.element').forEach(element => { element.addEventListener('click', function () { const fullname = this.querySelector('.Fullname').textContent.trim(); console.log(fullname); window.open(`https://de.wikipedia.org/wiki/${fullname}`, "_blank"); }); });
+ document.querySelectorAll('.element').forEach(element => { 
+  element.addEventListener('click', function () { const fullname = this.querySelector('.Fullname').textContent.trim(); 
+    console.log(fullname); 
+    if (fullname === "Titan") {
+    window.open(`https://de.wikipedia.org/wiki/${fullname}_(Element)`, "_blank"); 
+    } else {
+    window.open(`https://de.wikipedia.org/wiki/${fullname}`, "_blank"); 
+    }
+  }); 
+});

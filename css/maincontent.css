@@ -144,6 +144,7 @@ table:hover {
 
 .beispiel {
   font-size: 0.5em;
+  cursor: default;
 }
 
 .element:hover .beispiel {
